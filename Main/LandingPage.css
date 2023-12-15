@@ -1,5 +1,40 @@
 * {
   font-family: none;
+  margin: 0px;
+}
+
+footer {
+  position: absolute;
+  bottom: -1;
+  background-color: rgb(129, 184, 247);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 2.2em;
+}
+
+.fa-brands.fa-facebook {
+  cursor: pointer;
+}
+
+.fa-brands.fa-square-x-twitter {
+  cursor: pointer;
+}
+
+.fa-brands.fa-instagram {
+  cursor: pointer;
+}
+
+.fa-regular.fa-envelope {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=LandingPage.css.map */
