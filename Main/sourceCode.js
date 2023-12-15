@@ -5,6 +5,7 @@ const facebook = document.querySelector("#facebook")
 const twitterX = document.querySelector("#twitterX")
 const instagram = document.querySelector("#instagram")
 const gmail = document.querySelector("#gmail")
+const navbar = document.querySelector("header")
 
 aboutUs.addEventListener("click", (e) => {
     e.preventDefault()
@@ -29,4 +30,19 @@ instagram.addEventListener("click", (e) => {
 gmail.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "https://mail.google.com/"
+})
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", (e) => {
+    if (lastScrollY < window.scrollY) {
+        console.log("scrolling down")
+        navbar.classList.remove("fadeIn");
+        navbar.classList.add("fadeOut");
+    } else {
+        console.log("scrolling up")
+        navbar.classList.remove("fadeOut");
+        navbar.classList.add("fadeIn");
+    }
+    lastScrollY = window.scrollY;
 })
