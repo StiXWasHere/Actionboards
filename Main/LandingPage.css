@@ -16,21 +16,25 @@ footer {
 
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
   width: 100%;
   font-size: 2.2em;
 }
 
 .fa-brands.fa-facebook {
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .fa-brands.fa-square-x-twitter {
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .fa-brands.fa-instagram {
   cursor: pointer;
+  margin-right: 40px;
 }
 
 .fa-regular.fa-envelope {
