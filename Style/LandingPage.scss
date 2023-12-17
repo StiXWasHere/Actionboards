@@ -18,7 +18,7 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s, opacity 0.3s linear;
-}
+} ///This is connected to the navbar (header)
 .navbar {
     display: flex;
     justify-content: space-evenly;
