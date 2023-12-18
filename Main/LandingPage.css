@@ -42,6 +42,42 @@ header {
   cursor: pointer;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+main #adress {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+main .productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+main .productContainer .productBox {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main .productContainer .productBox img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+main .productContainer .productBox h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
 footer {
   position: absolute;
   bottom: -1;
