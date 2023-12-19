@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: rgba(243, 247, 246, 0.4392156863);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -65,8 +66,8 @@ main #adress {
   background-color: #f0f0f0;
   padding: 10px;
   align-items: center;
-  color: #0B2447;
-  text-shadow: rgb(164, 166, 175) 1px 0 1px;
+  color: #ffffff;
+  text-shadow: rgb(36, 36, 37) 3px 0 1px;
   text-align: center;
 }
 

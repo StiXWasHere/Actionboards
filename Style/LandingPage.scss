@@ -3,6 +3,7 @@
     margin: 0px;
 }
 body {
+  background-color: #f3f7f670;
   display: flex; // everything is a flexbox
   flex-direction: column;
   height: 100vh;
@@ -55,8 +56,8 @@ main {
       background-color: #f0f0f0;
       padding: 10px;
       align-items: center;
-      color:#0B2447;
-      text-shadow: rgb(164, 166, 175) 1px 0 1px;
+      color:#ffffff;
+      text-shadow: rgb(36, 36, 37) 3px 0 1px;
       text-align: center;
 
 
