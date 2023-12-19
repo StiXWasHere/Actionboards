@@ -1,12 +1,18 @@
 * {
-  font-family: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 header {
   position: sticky;
   top: 0;
-  background-color: black;
+  background-color: #0B2447;
   height: 80px;
   color: white;
 }
@@ -45,30 +51,48 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  height: 80vh;
 }
 main #adress {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background: url(images/rafael-pease-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #f0f0f0;
   padding: 10px;
+  align-items: center;
+  color: #0B2447;
+  text-shadow: rgb(164, 166, 175) 1px 0 1px;
   text-align: center;
 }
+main #adress p.hugetext {
+  margin-top: auto;
+  font-size: 6rem;
+}
+main #adress p.address {
+  margin-top: auto;
+  font-size: 2rem;
+}
 main .productContainer {
+  flex-direction: row;
+  align-content: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
 }
 main .productContainer .productBox {
-  width: 20%;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 5px 18px 1px rgba(189, 188, 188, 0.59);
 }
 main .productContainer .productBox img {
+  max-height: 33vh;
   max-width: 100%;
-  height: auto;
   border-radius: 4px;
   margin-bottom: 10px;
 }
@@ -79,9 +103,9 @@ main .productContainer .productBox h2 {
 }
 
 footer {
-  position: absolute;
+  margin-top: auto;
   bottom: -1;
-  background-color: rgb(129, 184, 247);
+  background-color: #A5D7E8;
   height: 70px;
   width: 100%;
   display: flex;
