@@ -11,6 +11,10 @@ aboutUs.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "AboutUs.html"
 })
+companyName.addEventListener("click", (e) => {
+    e.preventDefault()
+    window.location.href = "LandingPage.html"
+})
 store.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "https://google.com/"
