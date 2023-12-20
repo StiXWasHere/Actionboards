@@ -3,6 +3,7 @@
     margin: 0px;
 }
 body {
+  background-color: #f3f7f670;
   display: flex; // everything is a flexbox
   flex-direction: column;
   height: 100vh;
@@ -55,8 +56,8 @@ main {
       background-color: #f0f0f0;
       padding: 10px;
       align-items: center;
-      color:#0B2447;
-      text-shadow: rgb(164, 166, 175) 1px 0 1px;
+      color:#ffffff;
+      text-shadow: rgb(36, 36, 37) 3px 0 1px;
       text-align: center;
 
 
@@ -69,8 +70,6 @@ main {
           font-size: 2rem;
         }
     }
-    
-  
     .productContainer {
       flex-direction: row;
       align-content: center;
@@ -94,17 +93,17 @@ main {
         }
         h2 {
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
           color: #333;
         }
-      }
+      }    
     }
   }
   
 footer {
   margin-top: auto;
   bottom: -1;
-  background-color: #A5D7E8;
+  background-color: #87d3f3;
   height: 70px;
   width: 100%;
   display: flex;
@@ -131,4 +130,28 @@ footer {
 }
 .fa-regular.fa-envelope {
   cursor: pointer;
+}
+//AboutUs.html styling
+.teamImage {
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.teamimg {
+  max-width: 65%;
+  height: auto;
+  border-radius: 40px;
+  box-shadow: 14px 14px 18px 1px rgb(189, 188, 188);
+}
+.teamDescription {
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 28px;
+
+  //about us text
+  p {
+    padding: 1% 5% 1% 5%;
+    font-family:sans-serif;
+    font-size: 18px;
+  }
 }
