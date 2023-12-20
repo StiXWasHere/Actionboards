@@ -103,16 +103,19 @@ main {
 footer {
   margin-top: auto;
   bottom: -1;
-  background-color: #87d3f3;
-  height: 70px;
+  background-color: #c4e2faf8;
+  height: 70px !important; 
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .footer {
   display: flex;
+  height: 70px;
   justify-content: center;
+  align-items: center;
   width: 100%;
   font-size: 2.2em;
 }
