@@ -3,7 +3,8 @@
   margin: 0px;
 }
 
-html, body {
+html,
+body {
   background-color: rgba(243, 247, 246, 0.4392156863);
   display: flex;
   flex-direction: column;
@@ -37,13 +38,20 @@ header {
   margin-top: 20px;
 }
 
+.navbar > h1:hover {
+  transition: color 0.4s;
+  transform: scale(1.01);
+  transition: transform 0.2s;
+  color: rgba(196, 226, 250, 0.9725490196);
+}
+
 #aboutUs {
   font-size: 2.5em;
   cursor: pointer;
 }
 
 #name {
-  font-size: 3.2em;
+  font-size: 3.4em;
   cursor: pointer;
 }
 
@@ -89,7 +97,11 @@ main .productContainer {
   padding-top: 20px;
   margin-bottom: 20px;
 }
+main .productContainer .productBox:hover {
+  transform: scale(1.05);
+}
 main .productContainer .productBox {
+  transition: transform 0.3s;
   margin-bottom: 20px;
   padding: 15px;
   border: 1px solid #ccc;
@@ -170,6 +182,11 @@ footer {
   padding: 1% 20% 1% 20%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
+}
+
+#contactPage {
+  padding-top: 40px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=LandingPage.css.map */

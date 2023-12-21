@@ -3,7 +3,8 @@
   margin: 0px;
 }
 
-html, body {
+html,
+body {
   background-color: #f3f7f670;
   display: flex; // everything is a flexbox
   flex-direction: column;
@@ -39,13 +40,20 @@ header {
   margin-top: 20px; //hacky way of vertically aligning the text
 }
 
+.navbar>h1:hover {
+  transition: color 0.4s;
+  transform: scale(1.01);
+  transition: transform 0.2s;
+  color: #c4e2faf8
+}
+
 #aboutUs {
   font-size: 2.5em;
   cursor: pointer;
 }
 
 #name {
-  font-size: 3.2em;
+  font-size: 3.4em;
   cursor: pointer;
 }
 
@@ -96,13 +104,19 @@ main {
     padding-top: 20px;
     margin-bottom: 20px;
 
+    .productBox:hover {
+      transform: scale(1.05);
+    }
+
     .productBox {
+      transition: transform .3s;
       margin-bottom: 20px;
       padding: 15px;
       border: 1px solid #ccc;
       border-radius: 8px;
       //box-shadow: 5px 5px 2px 1px #d8e3e46b;^
       box-shadow: 6px 5px 18px 1px rgba(189, 188, 188, 0.59);
+
 
       img {
         max-height: 33vh;
@@ -185,4 +199,10 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 19px;
   }
+}
+
+//ContactPage.html styling
+#contactPage {
+  padding-top: 40px;
+  align-items: center;
 }
