@@ -17,7 +17,7 @@ companyName.addEventListener("click", (e) => {
 })
 contact.addEventListener("click", (e) => {
     e.preventDefault()
-    window.location.href = "https://google.com/"
+    window.location.href = "ContactPage.html"
 })
 facebook.addEventListener("click", (e) => {
     e.preventDefault()
