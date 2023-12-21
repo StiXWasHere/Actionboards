@@ -1,6 +1,6 @@
 const aboutUs = document.querySelector("#aboutUs")
 const companyName = document.querySelector("#name")
-const store = document.querySelector("#store")
+const contact = document.querySelector("#contact")
 const facebook = document.querySelector("#facebook")
 const twitterX = document.querySelector("#twitterX")
 const instagram = document.querySelector("#instagram")
@@ -15,7 +15,7 @@ companyName.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "LandingPage.html"
 })
-store.addEventListener("click", (e) => {
+contact.addEventListener("click", (e) => {
     e.preventDefault()
     window.location.href = "https://google.com/"
 })
