@@ -3,7 +3,7 @@
   margin: 0px;
 }
 
-body {
+html, body {
   background-color: rgba(243, 247, 246, 0.4392156863);
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #0B2447;
-  height: 80px;
+  height: 110px;
   color: white;
 }
 
@@ -34,19 +34,21 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 80px;
+  margin-top: 20px;
 }
 
 #aboutUs {
-  cursor: pointer;
-}
-
-#name {
   font-size: 2.5em;
   cursor: pointer;
 }
 
+#name {
+  font-size: 3.2em;
+  cursor: pointer;
+}
+
 #contact {
+  font-size: 2.5em;
   cursor: pointer;
 }
 
@@ -58,24 +60,24 @@ main #adress {
   min-height: 30vh;
   display: flex;
   flex-direction: column;
-  background: url(images/rafael-pease-header.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(images/rafael-pease-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #f0f0f0;
   padding: 10px;
   align-items: center;
   color: #ffffff;
   text-shadow: rgb(36, 36, 37) 3px 0 1px;
   text-align: center;
+  margin-bottom: 30px;
 }
 main #adress p.hugetext {
   margin-top: auto;
-  font-size: 6rem;
+  font-size: 7rem;
 }
 main #adress p.address {
   margin-top: auto;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 main .productContainer {
   flex-direction: row;
@@ -84,6 +86,8 @@ main .productContainer {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 main .productContainer .productBox {
   margin-bottom: 20px;
@@ -113,7 +117,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .footer {
@@ -151,21 +154,22 @@ footer {
 }
 
 .teamimg {
+  padding-top: 20px;
   max-width: 65%;
   height: auto;
   border-radius: 40px;
-  box-shadow: 14px 14px 18px 1px rgb(189, 188, 188);
+  box-shadow: 14px 14px 10px 1px rgb(189, 188, 188);
 }
 
 .teamDescription {
-  padding-top: 0.5rem;
+  padding-top: 23px;
   text-align: center;
   font-size: 28px;
 }
 .teamDescription p {
-  padding: 1% 5% 1% 5%;
-  font-family: sans-serif;
-  font-size: 18px;
+  padding: 1% 20% 1% 20%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
 }
 
 /*# sourceMappingURL=LandingPage.css.map */

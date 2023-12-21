@@ -1,116 +1,136 @@
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px;
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0px;
 }
-body {
+
+html, body {
   background-color: #f3f7f670;
   display: flex; // everything is a flexbox
   flex-direction: column;
   height: 100vh;
 }
+
 header {
-    position: sticky;
-    top: 0;
-    background-color: #0B2447;
-    height: 80px;
-    color: white;
+  position: sticky;
+  top: 0;
+  background-color: #0B2447;
+  height: 110px;
+  color: white;
 }
+
 .fadeIn {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0.3s, opacity 0.3s linear;
-} ///This is connected to the navbar (header)
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+///This is connected to the navbar (header)
 .fadeOut {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.3s, opacity 0.3s linear;
-} ///This is connected to the navbar (header)
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+///This is connected to the navbar (header)
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px; //hacky way of vertically aligning the text
 }
+
 #aboutUs {
-    cursor: pointer;
+  font-size: 2.5em;
+  cursor: pointer;
 }
+
 #name {
-    font-size: 2.5em;
-    cursor: pointer;
+  font-size: 3.2em;
+  cursor: pointer;
 }
+
 #contact {
-    cursor: pointer;
+  font-size: 2.5em;
+  cursor: pointer;
 }
+
 main {
+  display: flex;
+  flex-direction: column;
+
+  #adress {
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
-  
-    #adress {
-      min-height: 30vh;
-      display:flex;
-      flex-direction: column;
-      background: url(images/rafael-pease-header.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size:cover;
-      background-color: #f0f0f0;
-      padding: 10px;
-      align-items: center;
-      color:#ffffff;
-      text-shadow: rgb(36, 36, 37) 3px 0 1px;
-      text-align: center;
+    // background: rgba(207, 18, 18, 0.37);
+    // background-image: url(images/rafael-pease-header.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(images/rafael-pease-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: rgb(36, 36, 37) 3px 0 1px;
+    text-align: center;
+    margin-bottom: 30px;
 
-
-        p.hugetext {
-          margin-top: auto;
-          font-size: 6rem;
-        }
-        p.address {
-          margin-top: auto;
-          font-size: 2rem;
-        }
+    p.hugetext {
+      margin-top: auto;
+      font-size: 7rem;
     }
-    .productContainer {
-      flex-direction: row;
-      align-content: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 20px;
-  
-      .productBox {
-        margin-bottom: 20px;
-        padding: 15px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        //box-shadow: 5px 5px 2px 1px #d8e3e46b;^
-        box-shadow: 6px 5px 18px 1px rgba(189,188,188,0.59);
-        img {
-          max-height: 33vh;
-          max-width: 100%;
-          border-radius: 4px;
-          margin-bottom: 10px;
-        }
-        h2 {
-            text-align: center;
-            font-size: 20px;
-          color: #333;
-        }
-      }    
+
+    p.address {
+      margin-top: auto;
+      font-size: 2.5rem;
     }
   }
-  
+
+  .productContainer {
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+
+    .productBox {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      //box-shadow: 5px 5px 2px 1px #d8e3e46b;^
+      box-shadow: 6px 5px 18px 1px rgba(189, 188, 188, 0.59);
+
+      img {
+        max-height: 33vh;
+        max-width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+      }
+    }
+  }
+}
+
 footer {
   margin-top: auto;
   bottom: -1;
   background-color: #c4e2faf8;
-  height: 70px !important; 
+  height: 70px !important;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
+
 .footer {
   display: flex;
   height: 70px;
@@ -119,42 +139,50 @@ footer {
   width: 100%;
   font-size: 2.2em;
 }
+
 .fa-brands.fa-facebook {
   cursor: pointer;
   margin-right: 40px;
 }
+
 .fa-brands.fa-square-x-twitter {
   cursor: pointer;
   margin-right: 40px;
 }
+
 .fa-brands.fa-instagram {
   cursor: pointer;
   margin-right: 40px;
 }
+
 .fa-regular.fa-envelope {
   cursor: pointer;
 }
+
 //AboutUs.html styling
 .teamImage {
   padding-top: 2%;
   display: flex;
   justify-content: center;
 }
+
 .teamimg {
+  padding-top: 20px;
   max-width: 65%;
   height: auto;
   border-radius: 40px;
-  box-shadow: 14px 14px 18px 1px rgb(189, 188, 188);
+  box-shadow: 14px 14px 10px 1px rgb(189, 188, 188);
 }
+
 .teamDescription {
-  padding-top: 0.5rem;
+  padding-top: 23px;
   text-align: center;
   font-size: 28px;
 
   //about us text
   p {
-    padding: 1% 5% 1% 5%;
-    font-family:sans-serif;
-    font-size: 18px;
+    padding: 1% 20% 1% 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
   }
 }
